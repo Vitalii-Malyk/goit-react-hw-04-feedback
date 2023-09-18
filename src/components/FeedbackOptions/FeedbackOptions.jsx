@@ -11,9 +11,8 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
           <ButtonElementStyle
             key={i + 1}
             className=""
-            onClick={() => {
-              onLeaveFeedback(name);
-            }}
+            onClick={onLeaveFeedback}
+            name={name}
           >
             {name}
           </ButtonElementStyle>
