@@ -11,7 +11,6 @@ const App = () => {
   const options = { good, neutral, bad };
 
   const onLeaveFeedback = event => {
-    console.log(event.target.name);
     const nameButton = event.target.name;
     if (nameButton === 'good') {
       setGood(prevState => prevState + 1);
